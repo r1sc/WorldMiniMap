@@ -1,0 +1,8 @@
+## Interface: 11500
+## LoadOnDemand: 0
+## Title: World Mini Map
+## Author: r1sc
+## Version: 0.0.1
+## Notes: Minimap as world map
+## OptionalDeps:
+WorldMiniMap.lua

@@ -1,0 +1,11 @@
+{
+    "Lua.diagnostics.globals": [
+        "UIDropDownMenu_SetWidth",
+        "UIDropDownMenu_SetButtonWidth",
+        "UIDropDownMenu_JustifyText",
+        "UIDropDownMenu_Initialize",
+        "UIDropDownMenu_SetSelectedID",
+        "UIDropDownMenu_AddButton",
+        "UIDropDownMenu_CreateInfo"
+    ]
+}
