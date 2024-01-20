@@ -22,7 +22,7 @@ local function refreshTiles()
 	for y = -TILE_GRID_OVERHANG, TILE_GRID_OVERHANG do
 		for x = -TILE_GRID_OVERHANG, TILE_GRID_OVERHANG do
 			local tile = tiles[x .. "," .. y]
-			tile.texture:SetTexture("Interface\\AddOns\\WorldMiniMap\\world\\minimaps\\" ..
+			tile.texture:SetTexture("world\\minimaps\\" ..
 				continent .. "\\map" .. (tileYInt + y) .. "_" .. (tileXInt + x))
 		end
 	end
@@ -300,7 +300,7 @@ UIDropDownMenu_SetSelectedID(WPDropDownDemo, 1)
 
 local events = {
 	PLAYER_ENTERING_WORLD = function()
-		print("World Mini Map")
+		print("World Mini Map loaded")
 		centerMapOn(getPlayerWorldPos())
 		refreshTiles()
 	end,
@@ -319,3 +319,11 @@ WorldMiniMap:SetScript("OnEvent", function(self, event, ...)
 		end
 	end
 end)
+
+function WorldMiniMap_Toggle()
+	if WorldMiniMap:IsShown() then
+		WorldMiniMap:Hide()
+	else
+		WorldMiniMap:Show()
+	end
+end

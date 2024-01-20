@@ -1,0 +1,5 @@
+<Bindings>
+  <Binding name="WorldMiniMap Toggle" header="ADDONS" >
+    WorldMiniMap_Toggle()
+  </Binding>
+</Bindings>
